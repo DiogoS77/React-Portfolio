@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import NavTabs from "./NavTabs";
+import Footer from "./Footer";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Resume from "./pages/Resume";
@@ -30,6 +31,8 @@ export default function PortfolioContainer() {
       <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
       {/* Here we are calling the renderPage method which will return a component  */}
       {renderPage()}
+      {/* Include the Footer component */}
+      <Footer /> {/* Make sure it's here */}
     </div>
   );
 }

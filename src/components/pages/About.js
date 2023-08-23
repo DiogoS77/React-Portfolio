@@ -1,21 +1,34 @@
-import React from 'react';
+import React from "react";
+import "../../css/About.css"; // Import your custom CSS file
 
 export default function Home() {
   return (
-    <div>
-      <h1>Home Page</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
-        velit, lobortis ut magna varius, blandit rhoncus sem. Morbi lacinia nisi
-        ac dui fermentum, sed luctus urna tincidunt. Etiam ut feugiat ex. Cras
-        non risus mi. Curabitur mattis rutrum ipsum, ut aliquet urna imperdiet
-        ac. Sed nec nulla aliquam, bibendum odio eget, vestibulum tortor. Cras
-        rutrum ligula in tincidunt commodo. Morbi sit amet mollis orci, in
-        tristique ex. Donec nec ornare elit. Donec blandit est sed risus feugiat
-        porttitor. Vestibulum molestie hendrerit massa non consequat. Vestibulum
-        vitae lorem tortor. In elementum ultricies tempus. Interdum et malesuada
-        fames ac ante ipsum primis in faucibus.
-      </p>
+    <div className="about-container">
+      <div className="text-container">
+        <h1>About Me</h1>
+        <p>&#x1F44B; Hey, I'm Diogo, a Birmingham Coding Bootcamp student.</p>
+        <p>
+          I am currently studying Web Development and striving to make my mark
+          in the development world.
+        </p>
+        <p>
+          I am an inquisitive and hardworking individual. Coding intrigued me
+          due to the limitless challenges and opportunities it offers.
+        </p>
+        <p>
+          My primary goal is to push my boundaries and explore the endless
+          possibilities in this field. I am passionate about programming since
+          it's a domain where you can continuously learn and help others learn.
+        </p>
+      </div>
+      <div className="image-container">
+        {/* You can add your image here */}
+        <img
+          src="your-image.jpg"
+          alt="Diogo's Portrait"
+          className="profile-image"
+        />
+      </div>
     </div>
   );
 }

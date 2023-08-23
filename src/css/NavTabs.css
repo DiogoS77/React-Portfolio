@@ -1,0 +1,35 @@
+/* NavTabs.css */
+
+.nav-tabs {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #333; /* Background color for the entire nav bar */
+}
+
+.nav-item {
+  padding: 10px 20px;
+  border-bottom: 3px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.nav-item:hover {
+  border-color: #007bff; /* Color when hovering over a tab */
+}
+
+.nav-item.active {
+  background-color: #007bff; /* Background color of the active tab */
+}
+
+.nav-item.active a {
+  color: #fff; /* Text color of the active tab */
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #fff; /* Default text color */
+  font-weight: bold;
+}
+
+/* Add any additional styling you desire */

@@ -1,5 +1,6 @@
 import React from "react";
 import "../../css/About.css"; // Import your custom CSS file
+import Portrait from "../../images/test-image.jpeg";
 
 export default function Home() {
   return (
@@ -21,13 +22,9 @@ export default function Home() {
           it's a domain where you can continuously learn and help others learn.
         </p>
       </div>
-      <div className="image-container">
-        {/* You can add your image here */}
-        <img
-          src="your-image.jpg"
-          alt="Diogo's Portrait"
-          className="profile-image"
-        />
+      <div className="about-container">
+        {/* ... Other content ... */}
+        <img src={Portrait} alt="Diogo's Portrait" className="profile-image" />
       </div>
     </div>
   );

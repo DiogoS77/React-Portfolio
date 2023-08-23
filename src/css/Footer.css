@@ -6,3 +6,18 @@
   text-align: center;
   padding: 20px;
 }
+
+.social-icons {
+  display: flex;
+  justify-content: center; /* Horizontally center the icons */
+  align-items: center; /* Vertically center the icons */
+}
+
+.social-icons a {
+  margin: 0 10px; /* Add some spacing between the icons */
+}
+
+.social-icons img {
+  width: 50px; /* Adjust the width as needed */
+  min-height: 50px; /* Set a minimum height */
+}

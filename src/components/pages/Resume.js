@@ -15,6 +15,7 @@ import MySQLImage from "../../images/MySQL.png"; // Import the image
 import MongoDBImage from "../../images/mongoDB.png"; // Import the image
 import SequelizeImage from "../../images/sequelize.png"; // Import the image
 import MongooseImage from "../../images/mongoose.png"; // Import the image
+import resume from "../../images/Diogo_De_SousaCV.pdf";
 
 export default function Resume() {
   return (
@@ -122,7 +123,7 @@ export default function Resume() {
           </ul>
         </div>
       </div>
-      <a href="/Diogo_De_SousaCV.pdf" download>
+      <a href={resume} download>
         <button className="resume-download-button">Download Resume</button>
       </a>
     </div>

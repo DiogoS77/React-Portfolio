@@ -1,10 +1,22 @@
 {
   "files": {
-    "main.js": "/React-Portfolio/static/js/main.7c5d4f24.js",
+    "main.css": "/React-Portfolio/static/css/main.9052bbd2.css",
+    "main.js": "/React-Portfolio/static/js/main.75e73b41.js",
+    "static/media/WearCo.png": "/React-Portfolio/static/media/WearCo.0d575d7a3c6c5e7a2b1f.png",
+    "static/media/WeatherDash.png": "/React-Portfolio/static/media/WeatherDash.c5fc4c6a3caa467995fc.png",
+    "static/media/TechBlog.png": "/React-Portfolio/static/media/TechBlog.bc40b3374607e2fe94ca.png",
+    "static/media/test-image.jpeg": "/React-Portfolio/static/media/test-image.d1b7e372e224eea6ebfe.jpeg",
+    "static/media/WorkDay.png": "/React-Portfolio/static/media/WorkDay.8e2498ef94d8cf7ff577.png",
+    "static/media/spotify.png": "/React-Portfolio/static/media/spotify.cd2c2228d20d582d5ef5.png",
+    "static/media/NoteSaver.png": "/React-Portfolio/static/media/NoteSaver.34ec51f79de444064260.png",
+    "static/media/TextEditor.png": "/React-Portfolio/static/media/TextEditor.db4562bce99fe1962143.png",
+    "static/media/github.png": "/React-Portfolio/static/media/github.c8007a9fb185cb152ee6.png",
     "index.html": "/React-Portfolio/index.html",
-    "main.7c5d4f24.js.map": "/React-Portfolio/static/js/main.7c5d4f24.js.map"
+    "main.9052bbd2.css.map": "/React-Portfolio/static/css/main.9052bbd2.css.map",
+    "main.75e73b41.js.map": "/React-Portfolio/static/js/main.75e73b41.js.map"
   },
   "entrypoints": [
-    "static/js/main.7c5d4f24.js"
+    "static/css/main.9052bbd2.css",
+    "static/js/main.75e73b41.js"
   ]
 }

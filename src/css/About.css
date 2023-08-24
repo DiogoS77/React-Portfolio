@@ -8,7 +8,7 @@
   background-color: #222; /* Background color for the entire container */
   color: #fff; /* Text color */
   font-family: Arial, sans-serif;
-  min-height: 81.5vh;
+  min-height: 84vh;
 }
 
 .text-container {
@@ -69,4 +69,29 @@ p {
   transform: scale(
     1.1
   ); /* Add a hover effect to make it slightly bigger on hover */
+}
+
+.typing-animation {
+  overflow: hidden; /* Hide the overflow of the container */
+  white-space: nowrap; /* Prevent text from wrapping */
+  animation: typing 2s steps(40, end), blink-caret 0.5s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-right-color: transparent;
+  }
+  50% {
+    border-right-color: #fff; /* Color of the blinking caret */
+  }
 }

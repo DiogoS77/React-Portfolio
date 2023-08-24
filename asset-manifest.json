@@ -1,10 +1,11 @@
 {
   "files": {
     "main.css": "/React-Portfolio/static/css/main.cac65fd5.css",
-    "main.js": "/React-Portfolio/static/js/main.7310851c.js",
+    "main.js": "/React-Portfolio/static/js/main.133f4f03.js",
     "static/media/WearCo.png": "/React-Portfolio/static/media/WearCo.0d575d7a3c6c5e7a2b1f.png",
     "static/media/Bootstrap.png": "/React-Portfolio/static/media/Bootstrap.ca2bd3b63ce84d5327d4.png",
     "static/media/React.png": "/React-Portfolio/static/media/React.8a6fc0a24a800d1e0f4a.png",
+    "static/media/Diogo_De_SousaCV.pdf": "/React-Portfolio/static/media/Diogo_De_SousaCV.5a9972d143ed345c7286.pdf",
     "static/media/WeatherDash.png": "/React-Portfolio/static/media/WeatherDash.c5fc4c6a3caa467995fc.png",
     "static/media/TechBlog.png": "/React-Portfolio/static/media/TechBlog.bc40b3374607e2fe94ca.png",
     "static/media/test-image.jpeg": "/React-Portfolio/static/media/test-image.d1b7e372e224eea6ebfe.jpeg",
@@ -21,10 +22,10 @@
     "static/media/github.png": "/React-Portfolio/static/media/github.c8007a9fb185cb152ee6.png",
     "index.html": "/React-Portfolio/index.html",
     "main.cac65fd5.css.map": "/React-Portfolio/static/css/main.cac65fd5.css.map",
-    "main.7310851c.js.map": "/React-Portfolio/static/js/main.7310851c.js.map"
+    "main.133f4f03.js.map": "/React-Portfolio/static/js/main.133f4f03.js.map"
   },
   "entrypoints": [
     "static/css/main.cac65fd5.css",
-    "static/js/main.7310851c.js"
+    "static/js/main.133f4f03.js"
   ]
 }

@@ -1,0 +1,70 @@
+/* Resume.css */
+
+.resume-container {
+  text-align: center;
+  padding: 40px;
+  background-color: #222;
+  color: #fff;
+  min-height: 85.5vh;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.resume-content {
+  display: flex;
+  justify-content: space-between;
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.section {
+  width: 45%;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.proficiency-list {
+  list-style: none;
+  padding: 0;
+}
+
+.proficiency-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.proficiency-icon img {
+  width: 40px; /* Customize the icon size */
+  height: 40px;
+  margin-right: 10px;
+}
+
+.proficiency-name {
+  font-size: 1rem;
+  color: #fff;
+}
+
+.resume-download-button {
+  padding: 10px 20px;
+  background-color: #007bff; /* Customize the button color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 40px;
+}
+
+.resume-download-button:hover {
+  background-color: #0056b3; /* Customize the button color on hover */
+}

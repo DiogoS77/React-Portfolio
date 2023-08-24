@@ -1,24 +1,130 @@
-import React from 'react';
+import React from "react";
+import "../../css/Resume.css";
+import SvelteImage from "../../images/svelte.png"; // Import the image
+import Html5Image from "../../images/html5.png"; // Import the image
+import CssImage from "../../images/css.png"; // Import the image
+import JavaScriptImage from "../../images/javascript.png"; // Import the image
+import NextJSImage from "../../images/nextjs.png"; // Import the image
+import ReactImage from "../../images/React.png"; // Import the image
+import jQueryImage from "../../images/jQuery.png"; // Import the image
+import BootstrapImage from "../../images/Bootstrap.png"; // Import the image
+import NodeImage from "../../images/node.png"; // Import the image
+import ExpressImage from "../../images/express.png"; // Import the image
+import APIImage from "../../images/api.png"; // Import the image
+import MySQLImage from "../../images/MySQL.png"; // Import the image
+import MongoDBImage from "../../images/mongoDB.png"; // Import the image
+import SequelizeImage from "../../images/sequelize.png"; // Import the image
+import MongooseImage from "../../images/mongoose.png"; // Import the image
 
-export default function Blog() {
+export default function Resume() {
   return (
-    <div>
-      <h1>Blog Page</h1>
-      <p>
-        Donec a volutpat quam. Curabitur nec varius justo, sed rutrum ligula.
-        Curabitur pellentesque turpis sit amet eros iaculis, a mollis arcu
-        dictum. Ut vel ante eget massa ornare placerat. Etiam nisl orci, finibus
-        sodales volutpat et, hendrerit ut dolor. Suspendisse porta dictum nunc,
-        sed pretium risus rutrum eget. Nam consequat, ligula in faucibus
-        vestibulum, nisi justo laoreet risus, luctus luctus mi lacus sit amet
-        libero. Class aptent taciti sociosqu ad litora torquent per conubia
-        nostra, per inceptos himenaeos. Mauris pretium condimentum tellus eget
-        lobortis. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-        Donec placerat accumsan mi, ut congue neque placerat eu. Donec nec ipsum
-        in velit pellentesque vehicula sit amet at augue. Maecenas aliquam
-        bibendum congue. Pellentesque semper, lectus non ullamcorper iaculis,
-        est ligula suscipit velit, sed bibendum turpis dui in sapien.
-      </p>
+    <div className="resume-container">
+      <h1>Resume</h1>
+      <div className="resume-content">
+        <div className="section">
+          <h2>Front-End</h2>
+          <ul className="proficiency-list">
+            <li>
+              <div className="proficiency-icon">
+                <img src={Html5Image} alt="HTML" />
+              </div>
+              <span className="proficiency-name">HTML</span>
+            </li>
+            <li>
+              <div className="proficiency-icon">
+                <img src={CssImage} alt="CSS" />
+              </div>
+              <span className="proficiency-name">CSS</span>
+            </li>
+            <li>
+              <div className="proficiency-icon">
+                <img src={JavaScriptImage} alt="JavaScript" />
+              </div>
+              <span className="proficiency-name">JavaScript</span>
+            </li>
+            <li>
+              <div className="proficiency-icon">
+                <img src={SvelteImage} alt="Svelte" />
+              </div>
+              <span className="proficiency-name">Svelte</span>
+            </li>
+            <li>
+              <div className="proficiency-icon">
+                <img src={NextJSImage} alt="NextJS" />
+              </div>
+              <span className="proficiency-name">NextJS</span>
+            </li>
+            <li>
+              <div className="proficiency-icon">
+                <img src={ReactImage} alt="React" />
+              </div>
+              <span className="proficiency-name">React</span>
+            </li>
+            <li>
+              <div className="proficiency-icon">
+                <img src={jQueryImage} alt="jQuery" />
+              </div>
+              <span className="proficiency-name">jQuery</span>
+            </li>
+            <li>
+              <div className="proficiency-icon">
+                <img src={BootstrapImage} alt="Bootstrap" />
+              </div>
+              <span className="proficiency-name">Bootstrap</span>
+            </li>
+          </ul>
+        </div>
+        <div className="section">
+          <h2>Back-End</h2>
+          <ul className="proficiency-list">
+            <li>
+              <div className="proficiency-icon">
+                <img src={NodeImage} alt="Node.js" />
+              </div>
+              <span className="proficiency-name">Node.js</span>
+            </li>
+            <li>
+              <div className="proficiency-icon">
+                <img src={ExpressImage} alt="Express.js" />
+              </div>
+              <span className="proficiency-name">Express.js</span>
+            </li>
+            <li>
+              <div className="proficiency-icon">
+                <img src={APIImage} alt="API" />
+              </div>
+              <span className="proficiency-name">API</span>
+            </li>
+            <li>
+              <div className="proficiency-icon">
+                <img src={MySQLImage} alt="MySQL" />
+              </div>
+              <span className="proficiency-name">MySQL</span>
+            </li>
+            <li>
+              <div className="proficiency-icon">
+                <img src={MongoDBImage} alt="MongoDB" />
+              </div>
+              <span className="proficiency-name">MongoDB</span>
+            </li>
+            <li>
+              <div className="proficiency-icon">
+                <img src={SequelizeImage} alt="Sequelize" />
+              </div>
+              <span className="proficiency-name">Sequelize</span>
+            </li>
+            <li>
+              <div className="proficiency-icon">
+                <img src={MongooseImage} alt="Mongoose" />
+              </div>
+              <span className="proficiency-name">Mongoose</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <a href="../../images/Diogo_De SousaCV.pdf" download>
+        <button className="resume-download-button">Download Resume</button>
+      </a>
     </div>
   );
 }

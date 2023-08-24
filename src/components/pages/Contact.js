@@ -1,22 +1,92 @@
-import React from 'react';
+import React, {useState} from "react";
+import "../../css/Contact.css";
 
 export default function Contact() {
+  // Define state variables for form fields and validation
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [nameError, setNameError] = useState("");
+  const [emailError, setEmailError] = useState("");
+
+  // Define a function to handle form submission
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // Validate the name field
+    if (!name) {
+      setNameError("Name is required");
+    } else {
+      setNameError("");
+    }
+
+    // Validate the email field using a regular expression
+    const emailPattern = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
+    if (!emailPattern.test(email)) {
+      setEmailError("Invalid email address");
+    } else {
+      setEmailError("");
+    }
+
+    // If both name and email are valid, you can proceed with form submission or any other actions
+    if (name && emailPattern.test(email)) {
+      // Handle form submission or other actions here
+      console.log("Form submitted");
+    }
+  };
+
   return (
-    <div>
-      <h1>Contact Page</h1>
-      <p>
-        Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis
-        molestie urna. Aliquam semper ultrices varius. Aliquam faucibus sit amet
-        magna a ultrices. Aenean pellentesque placerat lacus imperdiet
-        efficitur. In felis nisl, luctus non ante euismod, tincidunt bibendum
-        mi. In a molestie nisl, eu sodales diam. Nam tincidunt lacus quis magna
-        posuere, eget tristique dui dapibus. Maecenas fermentum elementum
-        faucibus. Quisque nec metus vestibulum, egestas massa eu, sollicitudin
-        ipsum. Nulla facilisi. Sed ut erat ligula. Nam tincidunt nunc in nibh
-        dictum ullamcorper. Class aptent taciti sociosqu ad litora torquent per
-        conubia nostra, per inceptos himenaeos. Etiam ornare rutrum felis at
-        rhoncus. Etiam vel condimentum magna, quis tempor nulla.
-      </p>
+    <div className="contact-container">
+      <h1>Contact Us</h1>
+      <form onSubmit={handleSubmit}>
+        <div className="form-group">
+          <label htmlFor="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            onBlur={() => {
+              if (!name) {
+                setNameError("Name is required");
+              } else {
+                setNameError("");
+              }
+            }}
+          />
+          {nameError && <div className="error">{nameError}</div>}
+        </div>
+        <div className="form-group">
+          <label htmlFor="email">Email:</label>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            onBlur={() => {
+              const emailPattern = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
+              if (!emailPattern.test(email)) {
+                setEmailError("Invalid email address");
+              } else {
+                setEmailError("");
+              }
+            }}
+          />
+          {emailError && <div className="error">{emailError}</div>}
+        </div>
+        <div className="form-group">
+          <label htmlFor="message">Message:</label>
+          <textarea
+            id="message"
+            name="message"
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+          />
+        </div>
+        <button type="submit">Submit</button>
+      </form>
     </div>
   );
 }

@@ -33,10 +33,40 @@ p {
   align-items: center;
 }
 
+@keyframes float {
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translateY(0px);
+  }
+  50% {
+    box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+    transform: translateY(-20px);
+  }
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translateY(0px);
+  }
+}
+
+/* Apply the animation to the profile image */
 .profile-image {
-  width: 250px; /* Adjust the width as needed */
-  height: 250px; /* Adjust the height as needed */
-  border-radius: 50%; /* Make the image round */
-  border: 5px solid #007bff; /* Add a border around the image */
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Add a subtle shadow to the image */
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 5px solid #787b7e;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  animation: float 6s ease-in-out infinite; /* Apply the float animation */
+}
+
+/* Additional styling for the circular image */
+.profile-image {
+  display: block;
+  margin: 0 auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.profile-image:hover {
+  transform: scale(
+    1.1
+  ); /* Add a hover effect to make it slightly bigger on hover */
 }

@@ -122,7 +122,7 @@ export default function Resume() {
           </ul>
         </div>
       </div>
-      <a href="/Diogo_De SousaCV.pdf" download>
+      <a href="/Diogo_De_SousaCV.pdf" download>
         <button className="resume-download-button">Download Resume</button>
       </a>
     </div>

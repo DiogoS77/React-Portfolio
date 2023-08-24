@@ -122,7 +122,7 @@ export default function Resume() {
           </ul>
         </div>
       </div>
-      <a href="https://github.com/downloads/DiogoS77/React-Portfolio/Diogo_De_SousaCV.pdf">
+      <a href="/Diogo_De_SousaCV.pdf" download>
         <button className="resume-download-button">Download Resume</button>
       </a>
     </div>

@@ -72,7 +72,7 @@ To use this repository is pretty simple. You will have to clone the repo , and s
 
 ![End Result](./src/images/EndProject.png)
 
-Deployed Application:
+Deployed Application: https://diogos77.github.io/React-Portfolio
 
 ## Tests
 
@@ -98,4 +98,4 @@ For any questions or inquiries, feel free to reach out to me:
 - GitHub: [DiogoS77](https://github.com/DiogoS77)
 - Email: diogo.messi.18@hotmail.com
 
-Deployed Application:
+Deployed Application: https://diogos77.github.io/React-Portfolio

@@ -2,12 +2,12 @@ import React, {useState} from "react";
 import "../../css/Contact.css";
 
 export default function Contact() {
-  // Define state variables for form fields and validation
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [nameError, setNameError] = useState("");
   const [emailError, setEmailError] = useState("");
+  const [isDarkMode, setIsDarkMode] = useState(true);
 
   // Define a function to handle form submission
   const handleSubmit = (e) => {
@@ -35,8 +35,18 @@ export default function Contact() {
     }
   };
 
+  // Define a function to toggle dark mode
+  const toggleDarkMode = () => {
+    setIsDarkMode(!isDarkMode);
+  };
+
   return (
-    <div className="contact-container">
+    <div
+      className={`contact-container ${isDarkMode ? "dark-mode" : "light-mode"}`}
+    >
+      <button className="mode-switch" onClick={toggleDarkMode}>
+        {isDarkMode ? "🌞" : "🌙"}
+      </button>
       <h1>Contact Us</h1>
       <form onSubmit={handleSubmit}>
         <div className="form-group">

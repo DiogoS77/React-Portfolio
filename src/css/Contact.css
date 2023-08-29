@@ -63,3 +63,21 @@ button {
 button:hover {
   background-color: #0056b3;
 }
+
+/* Contact.css */
+.contact-container {
+  text-align: center;
+  padding: 40px;
+  min-height: 85.5vh;
+  transition: background-color 0.3s, color 0.3s; /* Add transitions for smoother mode switch */
+}
+
+.contact-container.light-mode {
+  background-color: #fff; /* Light mode background color */
+  color: #000; /* Light mode text color */
+}
+
+.contact-container.dark-mode {
+  background-color: #111; /* Dark mode background color */
+  color: #fff; /* Dark mode text color */
+}

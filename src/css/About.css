@@ -17,7 +17,7 @@
   align-items: center;
   padding: 20px;
   font-family: Arial, sans-serif;
-  min-height: 80vh;
+  min-height: 80.4vh;
   transition: background-color 0.3s, color 0.3s; /* Add transitions for smoother mode switch */
 }
 

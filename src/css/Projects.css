@@ -88,3 +88,20 @@
   border-color: #007bff; /* Blue border color on hover */
   text-decoration: none; /* Remove underline on hover */
 }
+
+.projects-container {
+  text-align: center;
+  padding: 40px;
+  min-height: 85.5vh;
+  transition: background-color 0.3s, color 0.3s; /* Add transitions for smoother mode switch */
+}
+
+.dark-mode {
+  background-color: var(--background-dark);
+  color: var(--text-dark);
+}
+
+.light-mode {
+  background-color: var(--background-light);
+  color: var(--text-light);
+}

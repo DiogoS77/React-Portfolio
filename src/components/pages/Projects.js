@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import "../../css/Projects.css";
 import WearCoImage from "../../images/WearCo.png"; // Import the image
 import TechBlogImage from "../../images/TechBlog.png"; // Import the image
@@ -8,6 +8,7 @@ import WeatherDashImage from "../../images/WeatherDash.png"; // Import the image
 import WorkDayImage from "../../images/WorkDay.png"; // Import the image
 
 export default function Projects() {
+  const [isDarkMode, setIsDarkMode] = useState(true);
   const projects = [
     {
       title: "WearCo",
@@ -53,8 +54,19 @@ export default function Projects() {
     },
   ];
 
+  const toggleDarkMode = () => {
+    setIsDarkMode(!isDarkMode);
+  };
+
   return (
-    <div className="projects-container">
+    <div
+      className={`projects-container ${
+        isDarkMode ? "dark-mode" : "light-mode"
+      }`}
+    >
+      <button className="mode-switch" onClick={toggleDarkMode}>
+        {isDarkMode ? "🌞" : "🌙"}
+      </button>
       <h1 className="projects-title">Projects</h1>
       <div className="projects-list">
         {projects.map((project, index) => (

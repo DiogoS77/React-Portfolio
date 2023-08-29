@@ -2,7 +2,7 @@
 
 import React, {useState, useEffect} from "react";
 import "../../css/About.css";
-import Portrait from "../../images/test-image.jpeg";
+import Portrait from "../../images/portfolio.jpg";
 
 export default function Home() {
   const [showText, setShowText] = useState(true);

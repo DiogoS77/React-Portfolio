@@ -8,7 +8,7 @@
   background-color: #222; /* Background color for the entire container */
   color: #fff; /* Text color */
   font-family: Arial, sans-serif;
-  min-height: 84vh;
+  min-height: 85.8vh;
 }
 
 .text-container {
@@ -50,8 +50,8 @@ p {
 
 /* Apply the animation to the profile image */
 .profile-image {
-  width: 250px;
-  height: 250px;
+  width: 240px;
+  height: 240px;
   border-radius: 50%;
   border: 5px solid #787b7e;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);

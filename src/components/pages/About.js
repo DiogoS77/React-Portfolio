@@ -1,22 +1,32 @@
+// Home.js
+
 import React, {useState, useEffect} from "react";
-import "../../css/About.css"; // Import your custom CSS file
+import "../../css/About.css";
 import Portrait from "../../images/test-image.jpeg";
 
 export default function Home() {
-  const [showText, setShowText] = useState(true); // Set initial state to true
+  const [showText, setShowText] = useState(true);
+  const [isDarkMode, setIsDarkMode] = useState(true);
 
   useEffect(() => {
-    // Delay the appearance of text by 1 second (adjust as needed)
     const delay = setTimeout(() => {
       setShowText(true);
     }, 1000);
 
-    // Clear the timeout when the component unmounts
     return () => clearTimeout(delay);
   }, []);
 
+  const toggleDarkMode = () => {
+    setIsDarkMode(!isDarkMode);
+  };
+
   return (
-    <div className="about-container">
+    <div
+      className={`about-container ${isDarkMode ? "dark-mode" : "light-mode"}`}
+    >
+      <button className="mode-switch" onClick={toggleDarkMode}>
+        {isDarkMode ? "🌞" : "🌙"}
+      </button>
       <div className="text-container">
         <h1>About Me</h1>
         <div className={`typing-animation ${showText ? "visible" : "hidden"}`}>
@@ -38,11 +48,7 @@ export default function Home() {
         </div>
       </div>
       <div className="image-container">
-        <img
-          src={Portrait}
-          alt="Diogo's Portrait"
-          className="profile-image" // Apply the CSS class to your image
-        />
+        <img src={Portrait} alt="Diogo's Portrait" className="profile-image" />
       </div>
     </div>
   );

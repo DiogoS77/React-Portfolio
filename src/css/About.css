@@ -1,14 +1,24 @@
 /* About.css */
 
+:root {
+  --background-dark: #222;
+  --text-dark: #fff;
+  --border-dark: #787b7e;
+  --box-shadow-dark: rgba(0, 0, 0, 0.3);
+  --background-light: #fff;
+  --text-light: #000;
+  --border-light: #ccc;
+  --box-shadow-light: rgba(0, 0, 0, 0.1);
+}
+
 .about-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: #222; /* Background color for the entire container */
-  color: #fff; /* Text color */
   font-family: Arial, sans-serif;
   min-height: 85.8vh;
+  transition: background-color 0.3s, color 0.3s; /* Add transitions for smoother mode switch */
 }
 
 .text-container {
@@ -49,26 +59,39 @@ p {
 }
 
 /* Apply the animation to the profile image */
+.mode-switch {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1;
+  color: var(--text-dark);
+}
+
+.dark-mode {
+  background-color: var(--background-dark);
+  color: var(--text-dark);
+}
+
+.light-mode {
+  background-color: var(--background-light);
+  color: var(--text-light);
+}
+
 .profile-image {
   width: 240px;
   height: 240px;
   border-radius: 50%;
-  border: 5px solid #787b7e;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-  animation: float 6s ease-in-out infinite; /* Apply the float animation */
-}
-
-/* Additional styling for the circular image */
-.profile-image {
-  display: block;
-  margin: 0 auto;
-  transition: transform 0.3s ease-in-out;
+  border: 5px solid var(--border-dark);
+  box-shadow: 0 0 20px var(--box-shadow-dark);
+  animation: float 6s ease-in-out infinite;
 }
 
 .profile-image:hover {
-  transform: scale(
-    1.1
-  ); /* Add a hover effect to make it slightly bigger on hover */
+  transform: scale(1.1);
 }
 
 .typing-animation {

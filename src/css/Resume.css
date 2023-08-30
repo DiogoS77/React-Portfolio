@@ -72,7 +72,7 @@ h2 {
 .resume-container {
   text-align: center;
   padding: 40px;
-  min-height: 85.5vh;
+  min-height: 85.9vh;
   transition: background-color 0.3s, color 0.3s; /* Add transitions for smoother mode switch */
 }
 

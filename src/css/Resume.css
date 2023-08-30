@@ -68,3 +68,20 @@ h2 {
 .resume-download-button:hover {
   background-color: #0056b3; /* Customize the button color on hover */
 }
+
+.resume-container {
+  text-align: center;
+  padding: 40px;
+  min-height: 85.5vh;
+  transition: background-color 0.3s, color 0.3s; /* Add transitions for smoother mode switch */
+}
+
+.dark-mode {
+  background-color: var(--background-dark);
+  color: var(--text-dark);
+}
+
+.light-mode {
+  background-color: var(--background-light);
+  color: var(--text-light);
+}

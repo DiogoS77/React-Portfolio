@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import "../../css/Resume.css";
 import SvelteImage from "../../images/svelte.png"; // Import the image
 import Html5Image from "../../images/html5.png"; // Import the image
@@ -18,8 +18,19 @@ import MongooseImage from "../../images/mongoose.png"; // Import the image
 import resume from "../../images/Diogo_De_SousaCV.pdf";
 
 export default function Resume() {
+  const [isDarkMode, setIsDarkMode] = useState(true);
+
+  const toggleDarkMode = () => {
+    setIsDarkMode(!isDarkMode);
+  };
+
   return (
-    <div className="resume-container">
+    <div
+      className={`resume-container ${isDarkMode ? "dark-mode" : "light-mode"}`}
+    >
+      <button className="mode-switch" onClick={toggleDarkMode}>
+        {isDarkMode ? "🌞" : "🌙"}
+      </button>
       <h1>Resume</h1>
       <div className="resume-content">
         <div className="section">

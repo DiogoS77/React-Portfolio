@@ -121,3 +121,36 @@ p {
     border-right-color: #fff; /* Color of the blinking caret */
   }
 }
+
+/* Add a media query for smaller screens */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column; /* Stack elements vertically on smaller screens */
+    text-align: center; /* Center-align text on smaller screens */
+  }
+
+  .text-container {
+    padding: 20px;
+    text-align: center; /* Center-align text on smaller screens */
+    width: 90%; /* Set a specific width for the text container */
+    margin: 0 auto; /* Center the container horizontally */
+  }
+
+  h1 {
+    font-size: 28px; /* Reduce the heading font size on smaller screens */
+  }
+
+  p {
+    font-size: 16px; /* Reduce the paragraph font size on smaller screens */
+    margin: 10px 0; /* Add some margin between paragraphs */
+  }
+
+  .image-container {
+    margin-top: 20px; /* Add some spacing between text and image on smaller screens */
+  }
+
+  .profile-image {
+    width: 160px; /* Reduce the image size on smaller screens */
+    height: 160px;
+  }
+}

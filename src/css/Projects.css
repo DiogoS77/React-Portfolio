@@ -105,3 +105,14 @@
   background-color: var(--background-light);
   color: var(--text-light);
 }
+
+@media (max-width: 768px) {
+  .projects-list {
+    flex-direction: column; /* Stack projects vertically on smaller screens */
+  }
+
+  .project-card {
+    width: 100%; /* Full width for projects on smaller screens */
+    margin-bottom: 20px;
+  }
+}

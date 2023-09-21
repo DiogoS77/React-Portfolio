@@ -40,11 +40,12 @@ export default function Home() {
             className={`typing-animation ${showText ? "visible" : "hidden"}`}
           >
             <p>
-              &#x1F44B; Hey, I'm Diogo, a Birmingham Coding Bootcamp student.
+              &#x1F44B; Hey, I'm Diogo, a recent graduate of the Birmingham
+              Coding Bootcamp.
             </p>
             <p>
-              I am currently studying Web Development and striving to make my
-              mark in the development world.
+              I have successfully completed my studies in Web Development and am
+              now eager to make my mark in the development world.
             </p>
             <p>
               I am an inquisitive and hardworking individual. Coding intrigued

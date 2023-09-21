@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/React-Portfolio/static/css/main.b3391a0e.css",
-    "main.js": "/React-Portfolio/static/js/main.8a455c3e.js",
+    "main.js": "/React-Portfolio/static/js/main.8833de52.js",
     "static/media/WearCo.png": "/React-Portfolio/static/media/WearCo.0d575d7a3c6c5e7a2b1f.png",
     "static/media/Bootstrap.png": "/React-Portfolio/static/media/Bootstrap.ca2bd3b63ce84d5327d4.png",
     "static/media/React.png": "/React-Portfolio/static/media/React.8a6fc0a24a800d1e0f4a.png",
     "static/media/WeatherDash.png": "/React-Portfolio/static/media/WeatherDash.c5fc4c6a3caa467995fc.png",
     "static/media/TechBlog.png": "/React-Portfolio/static/media/TechBlog.bc40b3374607e2fe94ca.png",
     "static/media/WorkDay.png": "/React-Portfolio/static/media/WorkDay.8e2498ef94d8cf7ff577.png",
-    "static/media/DiogoSousaCV.pdf": "/React-Portfolio/static/media/DiogoSousaCV.c0d6df44148d64743f6c.pdf",
+    "static/media/DiogoDeSousa_CV.pdf": "/React-Portfolio/static/media/DiogoDeSousa_CV.9616288e4c5e7946fa46.pdf",
     "static/media/spotify.png": "/React-Portfolio/static/media/spotify.cd2c2228d20d582d5ef5.png",
     "static/media/NoteSaver.png": "/React-Portfolio/static/media/NoteSaver.34ec51f79de444064260.png",
     "static/media/portfolio.jpg": "/React-Portfolio/static/media/portfolio.fa85dff942b1a8f06849.jpg",
@@ -23,10 +23,10 @@
     "static/media/github.png": "/React-Portfolio/static/media/github.c8007a9fb185cb152ee6.png",
     "index.html": "/React-Portfolio/index.html",
     "main.b3391a0e.css.map": "/React-Portfolio/static/css/main.b3391a0e.css.map",
-    "main.8a455c3e.js.map": "/React-Portfolio/static/js/main.8a455c3e.js.map"
+    "main.8833de52.js.map": "/React-Portfolio/static/js/main.8833de52.js.map"
   },
   "entrypoints": [
     "static/css/main.b3391a0e.css",
-    "static/js/main.8a455c3e.js"
+    "static/js/main.8833de52.js"
   ]
 }

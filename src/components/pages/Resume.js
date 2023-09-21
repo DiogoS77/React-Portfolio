@@ -15,7 +15,7 @@ import MySQLImage from "../../images/MySQL.png"; // Import the image
 import MongoDBImage from "../../images/mongoDB.png"; // Import the image
 import SequelizeImage from "../../images/sequelize.png"; // Import the image
 import MongooseImage from "../../images/mongoose.png"; // Import the image
-import resume from "../../images/Diogo_De_SousaCV.pdf";
+import resume from "../../images/DiogoSousaCV.pdf";
 
 export default function Resume() {
   const [isDarkMode, setIsDarkMode] = useState(true);
